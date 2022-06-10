@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Competitive Programming Survey</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Competitive Programming Survey</h1>
+      <p id="description" class="description center-txt">
+        Here's a competitive programming survey prepared by Simran Kaur
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-elements">
+        <label id="name-label" for="name">Name<span class="hint">(required)</span></label>
+        <input type="text" name="name" id="name" class="form-imp" placeholder="Enter your name" required />
+      </div>
+      <div class="form-elements">
+        <label id="email-label" for="email">Email<span class="hint">(required)</span></label>
+        <input type="email" name="email" id="email" class="form-imp" placeholder="Enter your e-mail" required />
+      </div>
+      <div class="form-elements">
+        <label id="number-label" for="number">Age<span class="hint">(optional)</span></label>
+        <input type="number" name="age" id="number" min="5" max="99" class="form-imp" placeholder="Enter your age" />
+      </div>
+      <div class="form-elements">
+        <p>What's your title on Codeforces?</p>
+        <select id="dropdown" name="cf-title" class="form-imp" required>
+          <option disabled selected value>
+            Select the title you have on codeforces.com
+          </option>
+          <option value="newbie">Newbie</option>
+          <option value="pupil">Pupil</option>
+          <option value="apprentice">Apprentice</option>
+          <option value="specialist">Specialist</option>
+          <option value="expert">Expert</option>
+          <option value="candidate-master">Candidate Master</option>
+          <option value="master">Master</option>
+          <option value="international-master">International Master</option>
+          <option value="grandmaster">Grandmaster</option>
+          <option value="international-grandmaster">
+            International Grandmaster
+          </option>
+          <option value="legendary-grandmaster">
+            Lengendary Grandmaster
+          </option>
+        </select>
+      </div>
+
+      <div class="form-elements">
+        <p>How much time do you spend on competitive programming per day?</p>
+        <label>
+          <input name="time-on-cf" value="LessThanOneHour" type="radio" class="input-rb" checked />
+          &lt; 1 hour
+        </label>
+        <label>
+          <input name="time-on-cf" value="OneToTwo" type="radio" class="input-rb" />
+          1 - 2 hours</label>
+
+        <label><input name="time-on-cf" value="ThreeToFive" type="radio" class="input-rb" />
+          3 - 5 hours</label>
+
+        <label><input name="time-on-cf" value="MoreThan5Hours" type="radio" class="input-rb" />
+          &gt; 5 hours</label>
+      </div>
+
+      <div class="form-elements">
+        <p>
+          What resources do you follow to learn algorithms and data structures
+          in general?
+          <span class="hint">(Check all that apply)</span>
+        </p>
+
+        <label><input name="resources" value="front-end-projects" type="checkbox" class="input-cb" />Coding
+          platforms</label>
+        <label>
+          <input name="resources" value="back-end-projects" type="checkbox" class="input-cb" />YouTube</label>
+        <label><input name="resources" value="data-visualization" type="checkbox" class="input-cb" />Tutorial
+          sites</label>
+        <label><input name="resources" value="challenges" type="checkbox" class="input-cb" />Editorial of
+          problemset</label>
+        <label><input name="resources" value="open-source-community" type="checkbox" class="input-cb" />CP Algorithms' articles</label>
+        <label><input name="resources" value="gitter-help-rooms" type="checkbox" class="input-cb" />Codeforces
+          blog</label>
+        <label><input name="resources" value="videos" type="checkbox" class="input-cb" />School/College Course</label>
+      </div>
+
+      <div class="form-elements">
+        <p>
+          Online judges/contest sites/coding platforms that you use for
+          competitive programming?
+          <span class="hint">(Check all that apply)</span>
+        </p>
+        <label><input name="practise-cp" value="videos" type="checkbox" class="input-cb" />Codeforces</label>
+        <label><input name="practise-cp" value="videos" type="checkbox" class="input-cb" />CodeChef</label>
+        <label><input name="practise-cp" value="videos" type="checkbox" class="input-cb" />AtCoder</label>
+        <label><input name="practise-cp" value="videos" type="checkbox" class="input-cb" />LeetCode</label>
+        <label><input name="practise-cp" value="videos" type="checkbox" class="input-cb" />HackerRank</label>
+        <label><input name="practise-cp" value="videos" type="checkbox" class="input-cb" />HackerEarth</label>
+        <label><input name="practise-cp" value="videos" type="checkbox" class="input-cb" />TopCoder</label>
+      </div>
+
+      <div class="form-elements">
+        <p>
+          What advice/recommendations you'd give to someones who's just
+          starting out with competitive programming?
+        </p>
+        <textarea id="comment" class="input-txtarea" name="comment"
+          placeholder="Enter your advice/recommendation here!"></textarea>
+      </div>
+
+      <div class="form-elements">
+        <button type="submit" id="submit" class="submit-button">
+          Submit the survey!
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
